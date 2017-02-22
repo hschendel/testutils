@@ -19,4 +19,3 @@ func TestOpenTestDataFile(t *testing.T) {
 		t.Error("Expected \"Blah\", but found: ", string(content))
 	}
 }
-	

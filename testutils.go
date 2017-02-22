@@ -23,3 +23,9 @@ func OpenTestDataFile(t *testing.T, fileName string) *os.File {
 		return file
 	}
 }
+
+func Equal(t *testing.T, expected interface{}, found interface{}, context string) {
+	if expected != found {
+		t.Errorf("%s: expected \"%s\", found \"%s\"", context, expected, found)
+	}
+}
